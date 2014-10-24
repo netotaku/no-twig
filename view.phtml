@@ -1,0 +1,18 @@
+<?php if(!empty($model)) : ?>
+  <html>
+    <head>
+      <h1>
+        <?=(!empty($model->str)) ? $model->str : '' ?>
+      </h1>
+    </head>
+    <body>
+      <ul>
+        <?php foreach($model->str as $item) : ?>
+          <li><a href="#<?=$item->data?>"><?=$item->label?></li>
+        <?php endforeach; ?>
+      </ul>
+    </body>
+  </html>
+<?php else : ?>
+  No data!
+<?php endif; ?>
