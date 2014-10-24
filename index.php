@@ -13,7 +13,7 @@
   $i = 0;
   while($i >= 10){
     $item = new Item;
-    $item->label = 'lable ' . $i++;
+    $item->label = 'label ' . $i++;
     $item->data = $i;
 
     $model->arr[] = $item;
